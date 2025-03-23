@@ -1,0 +1,71 @@
+Ventanas principal: Incluye botones para interactuar con su tamaño y comportamiento, cuenta como un contendedor de alto nivel
+Toda barra de herramientas, campos de entrada, lista de opciones, va dentro de una ventana.
+Las GUI son controladas a base de eventos:
+- Click en boton
+- Escribnir en campo
+- Cerrar ventanas
+- Pasar por encima el mouse
+- etc
+
+Tipo de eventos
+- Manejador de eventos
+- Manejo de eventos
+
+Establecer manejo de evento:
+1. Conocer el tipo de evento
+2. Implementar una clase escuchadora (Listener) de eventos
+3. Registrar el manejador de eventos
+
+TIPOS DE EVENTOS
+Existen dos tipos generales
+- Fisicos. Evento de hardware (mouse, teclado, pantalla touch, etc)
+ + ComponentEvent
+ + ContainerEvent
+ + WindowEvent
+ + FocusEvent
+- Semanticos (Mayor nivel). Eventos fisicos en determinado orden con un significado
+(Se organizan en jerarquia de clases)
+
+Clases de eventos
++ ActionEvent
+ - Presionar boton
+ - Click en elemento de lista
+ - Seleccionar elemento en menu
++ AdjustmentEvent
+ - Mover un scrollbar
++ ComponentEvent
+ - Ocultar, mover, cambiar tamaño, hacer visible...
+ cualquier evento que afecte al componente elegido
++ ContainerEvent
+ - Añadir o eliminar un componente al Container
++ FocusEvent
+ - Cuando el componente gana o pierde foco
++ KeyEvent
+ - Recibir una entrada desde el teclado
++ ItemEvent
+ - Click en checkbox
+ - Seleccionar elemento en menu de opciones
++ MouseEvent
+ - Puntero del mouse interactua con el componente
++ TextEvent
+ - Cuando cambia el valor de un campo de texto
++ WindowEvent
+ - Cuando una ventana se cierra, minimiza, maximiza, etc.
+TODO clase de evento tiene su propia clase manejadora(Listener) (ActionEvent>ActionListener, TextEvent->TextListener, etc)
+TODO, Para agregar cualquier componente a una clase manejadora, primero se crea un nuevo objeto de la clase manejadora
+TODO; para despues poder agregar los componentes.
+JButton. Boton normal
+JToggleButton:
+ JCheckBox. Botones de verificacion
+ JRadioButton. Botones de opcion (Mutuamente excluyentes) 0
+Se verifica el estado de las casillas (Seleccionado o no), con BoxName.isSelected(); regresa un booleano
+
+Font. Estilo del texto
+Component.setFont("Serif",Font.ITALIC,12); //("Nombre de letra", tipo, tamaño);
+
+Graphics. Clase que cuenta con toda clase de metodos para dibujar en pantalla
+
+KeyEvent. Eventos para acciones con el teclado
+keyPressed(); Respuesta a cualquier tecla
+keyTyped(); Respuesta a teclas que no sean de accion (teclas de accion: ctrl, alt, shift, etc)
+keyRelased();

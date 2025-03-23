@@ -1,0 +1,45 @@
+LIBRERÍAS Y PAQUETES
+
+Componentes: Permiten al usuario la interacción con la interfaz (Tipos: AWT, Swing)
+
+javax.swing.JComponent; es la clase padre de todos los componentes
+
+"jerarq 1.jpg" Jerarquía de componentes
+
+Todas las clases que residen en un mismo paquete, deben de tener un objetivo en común
+Los paquetes tienen extension paq.jar
+Un paquete es como una carpeta
+
+Una libreria soluciona solo un problema, un Framework cuenta con multiples soluciones a multiples problemas
+
+Modelo. Da la estructura de la base da datos, manejar los datos
+Vista. Interfaz que interactua con el usuario
+Controlador. Intermedio entre la vista y el modelo, procesa la peticion del usuario en en la interfaz, y retorna respuestas desde el modelo al usuario6
+
+JavaFX. Estilos de ventanas mas profesional
+Java2D. Graficos y vectores en 2D
+Java3D. Grafcios en 3D
+
+No es recomendable utilizar paqueteria de Swing y AWT en el mismo proyecto, ya que pueden interferir entre ellos
+Es preferible utilizar Swing sobre AWT, pero si se requiere utilizar componentes de AWT, hacer el proyecto en enteramente AWT
+
+Containers. Existen de uso intermedio y superior
+JWindow. Ventana sin borde ni elementos (superior)
+JApplet. Antiguo xd, para aplicaciones web
+
+setToolTipText. Texto de ayuda al pasar el cursor por encima de texto
+Cursor. Cambiar el tipo de cursor cuadno pasa por encima de un componente
+JScrollPane. Activa las barras deslizadoras de un componente
+
+Menus:
+JMenuBar.
+JMenu.
+JMenuItem.
+
+Componentes ligeros y pesados.
+Ligeros. Utilizan a Java para crear y manejar eventos
+Pesados. Utilizan recursos del sistema para crear y manejar los eventos
+
+JDialog(modal:true); el atributo modal declara si la ventana principal es accesible mientras el JDialog este activo
+true: Bloquea la ventana principal hasta que el JDialog se cierre
+false: Se puede interactuar con ambas ventanas al mismo tiempo.

@@ -43,3 +43,10 @@ Pesados. Utilizan recursos del sistema para crear y manejar los eventos
 JDialog(modal:true); el atributo modal declara si la ventana principal es accesible mientras el JDialog este activo
 true: Bloquea la ventana principal hasta que el JDialog se cierre
 false: Se puede interactuar con ambas ventanas al mismo tiempo.
+
+HERRAMIENTAS GRAPHICS Y JAVA 2D
+Jerarquia: Jerarquia2D.jpg
+
+Siempre que se quiera actualizar la interfaz de la ventana se utiliza repaint();
+ new Color(n.m,n.m,n.m); donde [0 >= n >= 1], para indicar colores usando valores entre 0 y 1.
+

@@ -14,7 +14,7 @@ public class AppJPanelColor extends JPanel{
 
         // establece nuevo color de dibujo, usando valores enteros
         g.setColor(new Color(255, 0, 0));
-        g.fillRect(15, 25, 100, 20);
+        g.fillRect(15, 25, 300, 20);
         g.drawString("RGB actual: " + g.getColor(), 130, 40);
 
         // establece nuevo color de dibujo, usando valores de punto flotante

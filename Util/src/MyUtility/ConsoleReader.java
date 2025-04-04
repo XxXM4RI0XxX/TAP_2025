@@ -1,4 +1,4 @@
-package Util;
+package MyUtility;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;

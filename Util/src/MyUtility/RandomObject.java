@@ -1,4 +1,4 @@
-package Util;
+package MyUtility;
 
 public class RandomObject {
 

@@ -1,6 +1,5 @@
-package Unidad_1.U1_Proyect;
 
-public class Main {
+public class Test {
 
     public static void main(String[] args) {
 
@@ -9,4 +8,3 @@ public class Main {
     }
 
 }
-

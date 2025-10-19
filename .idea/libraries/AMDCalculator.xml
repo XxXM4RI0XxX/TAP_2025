@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="AMDCalculator">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../AMDLibraries/out/artifacts/AMDCalculator_jar/AMDCalculator.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

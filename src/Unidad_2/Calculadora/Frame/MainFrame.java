@@ -1,12 +1,11 @@
 package Unidad_2.Calculadora.Frame;
 
-import MyLibraries.LibreriaCalculadora.Calculadora;
+import AMDCalculator.Calculate;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.ArrayList;
 
 public class MainFrame extends JFrame implements ActionListener {
 
@@ -66,8 +65,8 @@ public class MainFrame extends JFrame implements ActionListener {
 
         switch (operator){
             case "" -> res = a;
-            case "log" -> res = Calculadora.log10(a);
-            case "?" -> res = Calculadora.squareRoot((float) a);
+            case "log" -> res = Calculate.log10(a);
+            case "?" -> res = Calculate.squareRoot((float) a);
         }
 
         return res;
@@ -79,22 +78,22 @@ public class MainFrame extends JFrame implements ActionListener {
 
         switch (operator){
             case "+" ->{
-                res = Calculadora.addition((float)x,(float)y);
+                res = Calculate.addition((float)x,(float)y);
             }
             case "-" ->{
-                res = Calculadora.substraction((float)x,(float)y);
+                res = Calculate.substraction((float)x,(float)y);
             }
             case "*" ->{
-                res = Calculadora.multiplication((float)x,(float)y);
+                res = Calculate.multiplication((float)x,(float)y);
             }
             case "/" ->{
-                res = Calculadora.division((float)x,(float)y);
+                res = Calculate.division((float)x,(float)y);
             }
             case "^" ->{
-                res = Calculadora.power((float)x,(float)y);
+                res = Calculate.power((float)x,(float)y);
             }
             case "n?" ->{
-                res = Calculadora.nRoot((float)x,(float)y);
+                res = Calculate.nRoot((float)x,(float)y);
             }
             case "" ->{res = 0;}
         }

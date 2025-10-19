@@ -1,0 +1,9 @@
+Creación y modificación de datos
+
+API. Interfaz para conectar aplicaciones, mediante puertos.
+
+SGBD (Sistema Gestor de Bases de Datos). Aplicacion que permite un acceso controlado a la BDD, servicios como integridad y CRUD.
+BDD. Estructura organizada de datos
+Datos. Hechos conocidos con valor para el usuario
+
+Integro. Que no exista corrupción en los datos
